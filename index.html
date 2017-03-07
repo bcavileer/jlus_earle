@@ -10,27 +10,42 @@
             margin: 0;
             padding: 0;
         }
-        #navigation  a {
+
+        #navigation a {
             display: block;
             padding: 10px;
             border: 2px outset black;
             border-radius: 10px;
-            margin: 10px  auto;
+            margin: 10px auto;
             text-decoration: none;
             background-color: lightgray;
         }
 
-        #navigation {
+        #navigation ul {
             padding: 0 10%;
             list-style: none;
+        }
+
+        #navigation {
+            float: left;
+            width: 40%;
+        }
+
+        #splash {
+            width: 60%;
+            float: right;
+        }
+
+        #splash img {
+            max-width: 100%;
         }
     </style>
 </head>
 
 <body>
 
-<div style="float:left; width: 40%">
-    <ul id="navigation">
+<div id="navigation">
+    <ul>
         <li>
             <a href="pdfs/February 10 2017 Meeting_Maser Consulting Presentation (Revised).pdf">
                 February 10 2017 Meeting<br> Maser Consulting Presentation (Revised)
@@ -50,9 +65,8 @@
 </div>
 
 
-<div style="width: 60%; float: right; ">
-    <img style="max-width: 100%;"
-         src="images/Monmouth%20County%20Joint%20Land%20Use%20Study%20for%20Naval%20Weapons%20Station%20Earle_IMAGE.JPG"/>
+<div id="splash">
+    <img src="images/Monmouth%20County%20Joint%20Land%20Use%20Study%20for%20Naval%20Weapons%20Station%20Earle_IMAGE.JPG"/>
 </div>
 
 </body>
